@@ -1,0 +1,162 @@
+/* Variables */
+$color-one: #0097e6;
+$color-two: #33d9b2;
+$color-three: #ff5252;
+$font-light: #ffffff;
+$font-dark: #2c2c54;
+$transition: all 1s;
+
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Inconsolata", monospace;
+  color: $font-dark
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 96px 0;
+}
+
+/* Navigation */
+
+nav {
+  background: $color-one;
+  padding: 12px 0;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 36px;
+  position: relative;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: $font-light;
+}
+
+.navigation a:hover {
+  color: $color-two;
+}
+
+.navigation ul ul li {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.navigation li ul {
+  display: none;
+  text-align: center;
+  position: absolute;
+  background: $color-one;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 12px;
+}
+
+.navigation li:hover ul {
+  display: block;
+}
+
+.navigation li ul a {
+  font: $color-one;
+  display: block;
+  padding: 0 24px;
+}
+
+.navigation li ul a:hover {
+  font: $color-two;
+}
+
+.splash {
+  background: #0097e6;
+  color: white;
+  min-height: 500px;
+  display: flex;
+}  
+
+.splash-inner {
+  margin: auto;
+  max-width: 70%;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 72px;
+  word-spacing: -24px;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  margin: 24px 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: $transition;
+}
+
+.btn:hover {
+  background-position: 0 100%;
+  color:white;
+}
+
+.btn-one {
+  border-color: white;
+  color: white;
+  background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+
+.btn-one:hover{
+  color:$color-one;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  flex: 0 0 33.333%;
+  position: relative;
+}
+
+.number {
+  position: absolute;
+}
