@@ -131,6 +131,16 @@ nav {
   transition: $transition;
 }
 
+.services {
+  font-size: 48px;
+  margin: 0 0 72px 0;
+}
+
+.boxTitle {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+}
+
 .btn:hover {
   background-position: 0 100%;
   color:white;
@@ -159,4 +169,44 @@ nav {
 
 .number {
   position: absolute;
+  font-size: 144px;
+   top: -20px;
+  color: $color-two;
+  z-index: -1;
+  font-weight: bolder;
+  line-height: 1;
+}
+
+p:first-of-type {
+  font-weight: bolder;
+}
+
+.btn-two {
+  border-color: $color-two;
+  color: $color-two;
+  background-color: white;
+}
+
+.btn-two:hover{
+  color: $color-two;
+}
+
+.btn-three {
+  border-color: $color-three;
+  color: $color-three;
+  background-color: white;
+}
+
+.btn-three:hover{
+  color: $color-three;
+}
+
+.btn-four {
+  border-color: $color-one;
+  color: $color-one;
+  background-color: white;
+}
+
+.btn-four:hover{
+  color: $color-one;
 }

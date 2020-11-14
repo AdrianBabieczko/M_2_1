@@ -124,6 +124,16 @@ nav {
   transition: all 1s;
 }
 
+.services {
+  font-size: 48px;
+  margin: 0 0 72px 0;
+}
+
+.boxTitle {
+  font-size: 24px;
+  margin: 0 0 12px 0;
+}
+
 .btn:hover {
   background-position: 0 100%;
   color: white;
@@ -156,5 +166,45 @@ nav {
 
 .number {
   position: absolute;
+  font-size: 144px;
+  top: -20px;
+  color: #33d9b2;
+  z-index: -1;
+  font-weight: bolder;
+  line-height: 1;
+}
+
+p:first-of-type {
+  font-weight: bolder;
+}
+
+.btn-two {
+  border-color: #33d9b2;
+  color: #33d9b2;
+  background-color: white;
+}
+
+.btn-two:hover {
+  color: #33d9b2;
+}
+
+.btn-three {
+  border-color: #ff5252;
+  color: #ff5252;
+  background-color: white;
+}
+
+.btn-three:hover {
+  color: #ff5252;
+}
+
+.btn-four {
+  border-color: #0097e6;
+  color: #0097e6;
+  background-color: white;
+}
+
+.btn-four:hover {
+  color: #0097e6;
 }
 /*# sourceMappingURL=style.css.map */
