@@ -124,12 +124,12 @@ nav {
   transition: all 1s;
 }
 
-.services {
+.section-title {
   font-size: 48px;
   margin: 0 0 72px 0;
 }
 
-.boxTitle {
+.box-title {
   font-size: 24px;
   margin: 0 0 12px 0;
 }
@@ -174,7 +174,7 @@ nav {
   line-height: 1;
 }
 
-p:first-of-type {
+.p1:first-of-type {
   font-weight: bolder;
 }
 
@@ -206,5 +206,47 @@ p:first-of-type {
 
 .btn-four:hover {
   color: #0097e6;
+}
+
+.box-work {
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+}
+
+.skill-left .skill-description {
+  padding: 36px 0 36px 55%;
+  text-align: left;
+}
+
+.skill-image {
+  position: absolute;
+}
+
+img {
+  height: 220px;
+  width: 200px;
+}
+
+.skill-image:after {
+  opacity: 0.3;
+  margin: 20px 0 0 20px;
+}
+
+.p2:last-of-type {
+  font-weight: bolder;
+}
+
+.btn-five {
+  border: none;
+  margin: 36px 0;
+  padding: 0;
+  text-align: left;
+  background: none;
+  color: #0097e6;
+}
+
+.btn-five:hover {
+  background-position: 0 100%;
+  color: #ff5252;
 }
 /*# sourceMappingURL=style.css.map */

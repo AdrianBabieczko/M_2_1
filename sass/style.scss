@@ -18,7 +18,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   font-family: "Inconsolata", monospace;
-  color: $font-dark
+  color: $font-dark;
 }
 
 .container {
@@ -93,7 +93,7 @@ nav {
   color: white;
   min-height: 500px;
   display: flex;
-}  
+}
 
 .splash-inner {
   margin: auto;
@@ -131,19 +131,19 @@ nav {
   transition: $transition;
 }
 
-.services {
+.section-title {
   font-size: 48px;
   margin: 0 0 72px 0;
 }
 
-.boxTitle {
+.box-title {
   font-size: 24px;
   margin: 0 0 12px 0;
 }
 
 .btn:hover {
   background-position: 0 100%;
-  color:white;
+  color: white;
 }
 
 .btn-one {
@@ -152,8 +152,8 @@ nav {
   background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
 }
 
-.btn-one:hover{
-  color:$color-one;
+.btn-one:hover {
+  color: $color-one;
 }
 
 .wrapper {
@@ -170,14 +170,14 @@ nav {
 .number {
   position: absolute;
   font-size: 144px;
-   top: -20px;
+  top: -20px;
   color: $color-two;
   z-index: -1;
   font-weight: bolder;
   line-height: 1;
 }
 
-p:first-of-type {
+.p1:first-of-type {
   font-weight: bolder;
 }
 
@@ -187,7 +187,7 @@ p:first-of-type {
   background-color: white;
 }
 
-.btn-two:hover{
+.btn-two:hover {
   color: $color-two;
 }
 
@@ -197,7 +197,7 @@ p:first-of-type {
   background-color: white;
 }
 
-.btn-three:hover{
+.btn-three:hover {
   color: $color-three;
 }
 
@@ -207,6 +207,47 @@ p:first-of-type {
   background-color: white;
 }
 
-.btn-four:hover{
+.btn-four:hover {
   color: $color-one;
+}
+
+.box-work {
+  flex: 0 0 50%;
+}
+
+.skill-left .skill-description {
+  padding: 36px 0 36px 55%;
+  text-align: left;
+}
+
+.skill-image {
+  position: absolute;
+}
+
+img {
+  height: 220px;
+  width: 200px;
+}
+
+.skill-image:after {
+  opacity: 0.3;
+  margin: 20px 0 0 20px;
+}
+
+.p2:last-of-type {
+  font-weight: bolder;
+}
+
+.btn-five {
+  border: none;
+  margin: 36px 0;
+  padding: 0;
+  text-align: left;
+  background: none;
+  color: $color-one;
+}
+
+.btn-five:hover {
+  background-position: 0 100%;
+  color: $color-three;
 }
