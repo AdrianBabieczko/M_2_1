@@ -82,7 +82,7 @@ nav {
 
 .splash {
   background: #0097e6;
-  color: white;
+  color: #ffffff;
   min-height: 500px;
   display: -ms-flexbox;
   display: flex;
@@ -248,5 +248,61 @@ img {
 .btn-five:hover {
   background-position: 0 100%;
   color: #ff5252;
+}
+
+.contact-form {
+  -ms-flex: 2 0 0px;
+      flex: 2 0 0;
+  padding-right: 96px;
+}
+
+.contact-div {
+  -ms-flex: 1 0 0px;
+      flex: 1 0 0;
+}
+
+.contact-us {
+  background: #0097e6;
+  color: white;
+  min-height: 500px;
+}
+
+.input-text, .input-text-big {
+  background: transparent;
+  border: none;
+  border-bottom: solid;
+  border-color: white;
+  color: #ffffff;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.input-text:-ms-input-placeholder, .input-text-big:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.input-text::placeholder, .input-text-big::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.input-text-big {
+  height: 200px;
+}
+
+.input-text:focus, .input-text-big:focus, .input-text-big :focus {
+  outline-width: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.l1 {
+  font-weight: bolder;
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */
