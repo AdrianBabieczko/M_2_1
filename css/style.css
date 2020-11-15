@@ -305,4 +305,31 @@ ul {
   font-weight: bolder;
   font-size: 20px;
 }
+
+footer {
+  padding: 48px 0;
+}
+
+.footer-ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.footer-li {
+  font-size: 0;
+  padding: 10px;
+}
+
+.footer-li i {
+  font-size: 30px;
+  background: red;
+  width: 60px;
+  height: 60px;
+  color: white;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
