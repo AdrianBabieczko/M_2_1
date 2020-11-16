@@ -19,6 +19,7 @@ body {
   line-height: 1.7;
   font-family: "Inconsolata", monospace;
   color: $font-dark;
+  counter-reset: section;
 }
 
 .container {
@@ -61,7 +62,11 @@ nav {
 
 .navigation ul ul li {
   display: block;
-  margin-bottom: 12px;
+  background: white;
+}
+
+.navigation ul ul li a {
+  color: $color-two;
 }
 
 .navigation li ul {
@@ -177,6 +182,15 @@ nav {
   line-height: 1;
 }
 
+.number::before {
+  counter-increment: section;
+  content: counter(section);
+}
+
+.p1 {
+  margin-right: 10px;
+}
+
 .p1:first-of-type {
   font-weight: bolder;
 }
@@ -185,30 +199,33 @@ nav {
   border-color: $color-two;
   color: $color-two;
   background-color: white;
+  background-image: linear-gradient(90deg, $color-two 50%, transparent 50%);
 }
 
 .btn-two:hover {
-  color: $color-two;
+  color: white;
 }
 
 .btn-three {
   border-color: $color-three;
   color: $color-three;
   background-color: white;
+  background-image: linear-gradient(90deg, $color-three 50%, transparent 50%);
 }
 
 .btn-three:hover {
-  color: $color-three;
+  color: white;
 }
 
 .btn-four {
   border-color: $color-one;
   color: $color-one;
   background-color: white;
+  background-image: linear-gradient(90deg, $color-one 50%, transparent 50%);
 }
 
 .btn-four:hover {
-  color: $color-one;
+  color: white;
 }
 
 .box-work {
@@ -232,6 +249,10 @@ img {
 .skill-image:after {
   opacity: 0.3;
   margin: 20px 0 0 20px;
+}
+
+.p2{
+  margin-right: 10px;
 }
 
 .p2:last-of-type {
@@ -279,17 +300,18 @@ img {
   padding-bottom: 10px;
 }
 
-.input-text::placeholder{
+.input-text::placeholder {
   color: $font-light;
   opacity: 1;
 }
 
-.input-text-big{
+.input-text-big {
   @extend .input-text;
   height: 200px;
 }
 
-.input-text:focus, .input-text-big :focus{
+.input-text:focus,
+.input-text-big :focus {
   outline-width: 0;
 }
 
@@ -303,7 +325,7 @@ ul {
 }
 
 footer {
-  padding:48px 0;
+  padding: 48px 0;
 }
 
 .footer-ul {
@@ -318,13 +340,13 @@ footer {
 
 .footer-li i {
   font-size: 30px;
-    background: red;
-    width: 60px;
-    height: 60px;
-    color: white;
-    border-radius: 50%;
-    line-height: 60px;
-    text-align: center;
+  background: red;
+  width: 60px;
+  height: 60px;
+  color: white;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
 }
 
 /* Media */
@@ -356,5 +378,11 @@ footer {
 
   .skill-left .skill-description {
     padding: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  img {
+    max-width: 75%;
   }
 }
