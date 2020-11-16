@@ -226,7 +226,7 @@ nav {
 
 img {
   height: 220px;
-  width: 200px;
+  width: 250px;
 }
 
 .skill-image:after {
@@ -325,4 +325,36 @@ footer {
     border-radius: 50%;
     line-height: 60px;
     text-align: center;
+}
+
+/* Media */
+@media (max-width: 767px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  img {
+    max-width: 100%;
+    height: 150px;
+  }
+
+  .skill-image {
+    position: relative;
+  }
+
+  .contact-div {
+    margin-top: 50px;
+  }
+
+  .navigation li {
+    margin-right: 15px;
+  }
+
+  .box {
+    margin-bottom: 20px;
+  }
+
+  .skill-left .skill-description {
+    padding: 0;
+  }
 }
